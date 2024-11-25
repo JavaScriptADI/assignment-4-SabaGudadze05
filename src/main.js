@@ -63,9 +63,11 @@ console.log(arrayOfTenElements);
 let fruitArray = ["Apple", "Grape", "Cherry", "Pear", "WaterMelon"];
 fruitArray.push("Orange");
 let lastElement = fruitArray[fruitArray.length - 1];
+console.log(lastElement);
 fruitArray.pop();
 fruitArray.unshift("Strawberry");
 let firstElment = fruitArray[0];
+console.log(firstElment);
 fruitArray.shift();
 console.log(fruitArray);
 
@@ -73,16 +75,16 @@ console.log(fruitArray);
 let colors = ["Red", "Green", "Blue", "Yellow", "Purple"];
 
 for (let i = 0; i < colors.length; i++) {
-  console.log(colors[i]);
+    console.log(colors[i]);
 }
 // Assignment 4: Array Methods - splice and slice
 let numbers = [1, 2, 3, 4, 5, 6];
 console.log(numbers);
 numbers.splice(2, 2);
 console.log(numbers);
-numbers.splice(2, 0, 7, 8)
+numbers.splice(2, 0, 7, 8);
 console.log(numbers);
-newNumbers = numbers.slice(numbers.length - 3);
+let newNumbers = numbers.slice(numbers.length - 3);
 console.log(newNumbers);
 
 // Assignment 5: Array Sorting
@@ -92,7 +94,7 @@ console.log(names.sort());
 console.log(names.sort().reverse());
 
 // Assignment 6: Finding Elements in an Array
-let numbersArray = [1, 2, 3, 4, 5,]
+let numbersArray = [1, 2, 3, 4, 5,];
 console.log(numbersArray.indexOf(3));
 console.log(numbersArray.includes(10));
 console.log(numbersArray.findIndex(Number => Number > 4 ));
@@ -124,7 +126,7 @@ arrayEight[1] = firstVariable;
 // Assignment 9: Combining Arrays
 let numbers1 = [1, 2, 3];
 let numbers2 = [4, 5, 6];
-let numbers3 = numbers1.concat(numbers2)
+let numbers3 = numbers1.concat(numbers2);
 console.log(numbers3);
 let numbers4 = [...numbers1, ...numbers2];
 console.log(numbers4);
